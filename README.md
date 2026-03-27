@@ -7,6 +7,12 @@ The chatbot provides conversational responses to user queries and showcases how 
 
 ---
 
+## Chatbot Interface
+
+![AskMe Friend Chatbot UI](assets/chat-ui.png)
+
+---
+
 # ✨ Features
 
 * 💬 Friendly conversational chatbot
