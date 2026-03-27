@@ -2,6 +2,6 @@ fastapi
 uvicorn
 pydantic
 python-dotenv
-langchain
-langchain-google-genai
 markdown
+langchain==0.2.16
+langchain-google-genai
