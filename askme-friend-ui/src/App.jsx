@@ -1,53 +1,3 @@
-// import { useState } from "react";
-
-// function App() {
-//   const [message, setMessage] = useState("");
-//   const [reply, setReply] = useState("");
-//   const [loading, setLoading] = useState(false);
-
-//   const sendMessage = async () => {
-//     if (!message.trim()) return;
-
-//     setLoading(true);
-//     try {
-//       const res = await fetch("http://localhost:8000/chat", {
-//         method: "POST",
-//         headers: { "Content-Type": "application/json" },
-//         body: JSON.stringify({ message }),
-//       });
-
-//       const data = await res.json();
-//       setReply(data.reply);
-//     } catch (error) {
-//       setReply("Error contacting backend.");
-//     }
-//     setLoading(false);
-//   };
-
-//   return (
-//     <div style={{ maxWidth: 600, margin: "40px auto", fontFamily: "Arial" }}>
-//       <h1>Ask Me Friend Chatbot</h1>
-
-//       <textarea
-//         rows={4}
-//         value={message}
-//         onChange={(e) => setMessage(e.target.value)}
-//         placeholder="Type your question here..."
-//         style={{ width: "100%", padding: 10, fontSize: 16 }}
-//       />
-
-//       <button onClick={sendMessage} disabled={loading} style={{ marginTop: 10, padding: "10px 20px", fontSize: 16 }}>
-//         {loading ? "Thinking..." : "Send"}
-//       </button>
-
-//       <h3>Reply:</h3>
-//       <p style={{ whiteSpace: "pre-wrap", minHeight: 60 }}>{reply}</p>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import { useState, useEffect, useRef } from "react";
 
 function App() {
@@ -95,7 +45,7 @@ function App() {
     setLoading(true);
 
     try {
-      const res = await fetch(`${process.env.REACT_APP_API_URL}/chat`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/chat`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
