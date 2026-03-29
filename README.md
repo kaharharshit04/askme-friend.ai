@@ -131,9 +131,7 @@ http://localhost:3000
 
 # 🌍 Live Demo
 
-Frontend: https://your-frontend-url.vercel.app
-
-Backend: https://your-backend-url.onrender.com
+Frontend: https://askme-friend-ai-hk.vercel.app
 
 ---
 
